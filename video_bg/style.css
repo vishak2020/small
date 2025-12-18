@@ -207,3 +207,25 @@ header .logo
     font-size: 2em;
   }
 }
+
+/* ============================= */
+/* Mute / Unmute Button Styles   */
+/* ============================= */
+
+#muteBtn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1001; /* MUST be higher than overlay */
+}
+
+/* Make sure overlay stays behind clickable elements */
+.overlay {
+  z-index: 1;
+}
